@@ -3,7 +3,7 @@ import java.util.concurrent.CompletableFuture;
 // thenRun - Execute action after completion (no access to result)
 public class Threading05_ThenRun {
     public static void main(String[] args) {
-        CompletableFuture<Integer> future = CompletableFuture.supplyAsync(() -> {
+        CompletableFuture<Void> future = CompletableFuture.supplyAsync(() -> {
             System.out.println("Computing on: " + Thread.currentThread().getName());
             try {
                 Thread.sleep(1000);

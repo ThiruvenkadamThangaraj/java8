@@ -19,9 +19,9 @@ public class Program22_MethodReference {
         
         // Constructor reference
         System.out.println("\nString lengths using constructor:");
-        List<Integer> lengths = names.stream()
+        List<String> lengths = names.stream()
                 .map(String::length)
-                .map(Integer::new)
+                .map(String::valueOf)
                 .collect(Collectors.toList());
         System.out.println(lengths);
     }

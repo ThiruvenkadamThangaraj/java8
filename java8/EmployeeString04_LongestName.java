@@ -1,5 +1,4 @@
 import java.util.*;
-import java.util.stream.Collectors;
 
 // Find employees with longest name
 public class EmployeeString04_LongestName {

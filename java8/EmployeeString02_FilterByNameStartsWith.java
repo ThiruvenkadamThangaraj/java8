@@ -1,5 +1,4 @@
 import java.util.*;
-import java.util.stream.Collectors;
 
 // Filter employees by name starting with letter
 public class EmployeeString02_FilterByNameStartsWith {

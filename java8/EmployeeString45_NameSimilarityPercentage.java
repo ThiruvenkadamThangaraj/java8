@@ -1,4 +1,4 @@
-import java.util.*;
+
 
 // Calculate name similarity percentage
 public class EmployeeString45_NameSimilarityPercentage {

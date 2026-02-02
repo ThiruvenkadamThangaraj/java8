@@ -1,5 +1,4 @@
 import java.util.*;
-import java.util.stream.Collectors;
 
 // Collectors.teeing() - Java 12+ but showing the concept
 public class Program43_Teeing {

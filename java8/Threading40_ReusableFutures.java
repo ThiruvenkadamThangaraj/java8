@@ -17,7 +17,6 @@ public class Threading40_ReusableFutures {
         return future.exceptionally(ex -> {
             if (maxRetries > 0) {
                 System.out.println("Retrying... (" + maxRetries + " attempts left)");
-                return retry(new CompletableFuture<>(), maxRetries - 1).join();
             }
             throw new RuntimeException(ex);
         });

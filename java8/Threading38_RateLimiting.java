@@ -32,7 +32,6 @@ public class Threading38_RateLimiting {
         System.out.println("Starting rate-limited tasks (max 2 concurrent)...");
         
         for (int i = 1; i <= 5; i++) {
-            final int taskNum = i;
             limiter.execute("Task-" + i)
                     .thenAccept(System.out::println);
         }

@@ -12,11 +12,12 @@ public class Threading44_ErrorRecovery {
             return 50;
         })
         .thenApply(n -> {
-            System.out.println("Step 2: Got " + n);
-            if (n < 100) {
+            Integer val = (Integer) n;
+            System.out.println("Step 2: Got " + val);
+            if (val < 100) {
                 throw new RuntimeException("Value too small!");
             }
-            return n;
+                return val;
         })
         .exceptionally(ex -> {
             System.out.println("Recovery 2: " + ex.getMessage());

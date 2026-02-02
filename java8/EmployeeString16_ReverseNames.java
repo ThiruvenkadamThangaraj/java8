@@ -1,5 +1,4 @@
 import java.util.*;
-import java.util.stream.Collectors;
 
 // Reverse employee names
 public class EmployeeString16_ReverseNames {

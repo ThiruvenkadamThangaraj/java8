@@ -5,9 +5,7 @@ public class Threading17_ExceptionallyHandle {
     public static void main(String[] args) {
         CompletableFuture<Integer> future = CompletableFuture.supplyAsync(() -> {
             System.out.println("Processing on: " + Thread.currentThread().getName());
-            if (true) {
-                throw new RuntimeException("Something went wrong!");
-            }
+            System.out.println("Something went wrong!");
             return 42;
         })
         .exceptionally(exception -> {

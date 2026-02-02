@@ -34,7 +34,6 @@ public class Threading47_LoadBalancing {
         Server server2 = new Server("Server-2");
         
         for (int i = 1; i <= 6; i++) {
-            final int reqNum = i;
             Server chosen = server1.getLoad() <= server2.getLoad() ? server1 : server2;
             chosen.handle("Request-" + i)
                     .thenAccept(System.out::println);

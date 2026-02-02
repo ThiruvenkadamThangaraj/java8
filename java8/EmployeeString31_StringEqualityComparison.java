@@ -1,4 +1,4 @@
-import java.util.*;
+
 
 // Check employee name equality with equals() vs ==
 public class EmployeeString31_StringEqualityComparison {

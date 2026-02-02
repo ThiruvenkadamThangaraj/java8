@@ -23,11 +23,11 @@ public class String11_CountWords {
         
         // Word frequency
         System.out.println("\nWord frequency:");
-        Arrays.stream(texCollectors.groupingBy(
+        Arrays.stream(text.toLowerCase().split("\\W+"))
+                .filter(word -> !word.isEmpty())
+                .collect(Collectors.groupingBy(
                     Function.identity(),
-                    ream.Collectors.groupingBy(
-                    java.util.function.Function.identity(),
-                    java.util.stream.Collectors.counting()
+                    Collectors.counting()
                 ))
                 .forEach((word, count) -> System.out.println(word + ": " + count));
     }

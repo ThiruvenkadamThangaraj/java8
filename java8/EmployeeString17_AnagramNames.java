@@ -15,8 +15,8 @@ public class EmployeeString17_AnagramNames {
         employees.forEach(System.out::println);
         
         System.out.println("\nAnagram groups:");
-        Map<String, List<mGroups = employees.stream()
-                .collect(java.util.stream.Collectors.groupingBy(
+        Map<String, List<Employee>> anagramGroups = employees.stream()
+                .collect(Collectors.groupingBy(
                     emp -> {
                         char[] chars = emp.getName().toLowerCase().toCharArray();
                         Arrays.sort(chars);

@@ -5,10 +5,11 @@ public class Program21_OptionalBasics {
     public static void main(String[] args) {
         // Creating Optional
         Optional<String> nonEmpty = Optional.of("Hello");
-        Optional<String> nullable = Optional.ofNullable(null);
-        Optional<String> empty = Optional.empty();
+        Optional<String> nullable = Optional.ofNullable("test");
+        nullable.ifPresent(s -> System.out.println("Nullable: " + s));
         
         // isPresent and ifPresent
+        Optional<String> empty = Optional.empty();
         System.out.println("nonEmpty present? " + nonEmpty.isPresent());
         nonEmpty.ifPresent(s -> System.out.println("Value: " + s));
         

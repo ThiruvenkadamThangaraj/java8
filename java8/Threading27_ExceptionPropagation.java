@@ -7,13 +7,15 @@ public class Threading27_ExceptionPropagation {
             System.out.println("Step 1: Computing");
             return 10;
         })
-        .thenApply(n -> {
+        .thenApply(n -> (Integer) n)
+        .thenApply((Integer n) -> {
             System.out.println("Step 2: Processing " + n);
             throw new RuntimeException("Error in step 2!");
         })
         .thenApply(n -> {
+            Integer val = (Integer) n;
             System.out.println("Step 3: This won't execute");
-            return n * 2;
+            return val * 2;
         })
         .exceptionally(ex -> {
             System.out.println("Caught exception: " + ex.getMessage());

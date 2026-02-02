@@ -19,7 +19,7 @@ public class Threading15_RunEither {
             } catch (InterruptedException e) { e.printStackTrace(); }
         });
         
-        CompletableFuture<Void> result = future1.runEitherAsync(future2, () -> {
+        CompletableFuture<Void> result = future1.acceptEitherAsync(future2, (v) -> {
             System.out.println("One of them completed!");
             System.out.println("Running follow-up action");
         });
