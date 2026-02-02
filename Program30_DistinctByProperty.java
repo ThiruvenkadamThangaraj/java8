@@ -7,19 +7,19 @@ import java.util.stream.Collectors;
 // Remove duplicates based on specific property
 public class Program30_DistinctByProperty {
     public static void main(String[] args) {
-        List<Employee> employees = Arrays.asList(
-            new Employee(1, "Alice"),
-            new Employee(2, "Bob"),
-            new Employee(3, "Alice"),
-            new Employee(4, "Charlie")
+        List<Employee30> employees = Arrays.asList(
+            new Employee30(1, "Alice"),
+            new Employee30(2, "Bob"),
+            new Employee30(3, "Alice"),
+            new Employee30(4, "Charlie")
         );
         
         System.out.println("Original:");
         employees.forEach(System.out::println);
         
         System.out.println("\nDistinct by name:");
-        List<Employee> distinctByName = employees.stream()
-                .filter(distinctByKey(Employee::getName))
+        List<Employee30> distinctByName = employees.stream()
+                .filter(distinctByKey(Employee30::getName))
                 .collect(Collectors.toList());
         distinctByName.forEach(System.out::println);
     }
@@ -30,11 +30,11 @@ public class Program30_DistinctByProperty {
     }
 }
 
-class Employee {
+class Employee30 {
     private int id;
     private String name;
     
-    public Employee(int id, String name) {
+    public Employee30(int id, String name) {
         this.id = id;
         this.name = name;
     }
@@ -44,6 +44,6 @@ class Employee {
     
     @Override
     public String toString() {
-        return "Employee{id=" + id + ", name='" + name + "'}";
+        return "Employee30{id=" + id + ", name='" + name + "'}";
     }
 }

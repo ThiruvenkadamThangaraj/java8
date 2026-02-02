@@ -1,13 +1,13 @@
 import java.util.*;
 
-// Check if employee names contain vowels
+// Check if Employee05 names contain vowels
 public class EmployeeString05_NamesContainVowels {
     public static void main(String[] args) {
-        List<Employee> employees = Arrays.asList(
-            new Employee(1, "Alice", "IT"),
-            new Employee(2, "Brr", "HR"),
-            new Employee(3, "Sky", "Finance"),
-            new Employee(4, "Bob", "IT")
+        List<Employee05> employees = Arrays.asList(
+            new Employee05(1, "Alice", "IT"),
+            new Employee05(2, "Brr", "HR"),
+            new Employee05(3, "Sky", "Finance"),
+            new Employee05(4, "Bob", "IT")
         );
         
         System.out.println("Employees with vowels in name:");
@@ -24,12 +24,12 @@ public class EmployeeString05_NamesContainVowels {
     }
 }
 
-class Employee {
+class Employee05 {
     private int id;
     private String name;
     private String department;
     
-    public Employee(int id, String name, String department) {
+    public Employee05(int id, String name, String department) {
         this.id = id;
         this.name = name;
         this.department = department;
@@ -41,6 +41,6 @@ class Employee {
     
     @Override
     public String toString() {
-        return "Employee{id=" + id + ", name='" + name + "', dept='" + department + "'}";
+        return "Employee05{id=" + id + ", name='" + name + "', dept='" + department + "'}";
     }
 }

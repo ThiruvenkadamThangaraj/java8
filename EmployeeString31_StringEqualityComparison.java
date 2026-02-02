@@ -1,11 +1,11 @@
 
 
-// Check employee name equality with equals() vs ==
+// Check Employee31 name equality with equals() vs ==
 public class EmployeeString31_StringEqualityComparison {
     public static void main(String[] args) {
-        Employee emp1 = new Employee(1, "Alice", 50000);
-        Employee emp2 = new Employee(2, "Alice", 60000);
-        Employee emp3 = new Employee(3, new String("Alice"), 55000);
+        Employee31 emp1 = new Employee31(1, "Alice", 50000);
+        Employee31 emp2 = new Employee31(2, "Alice", 60000);
+        Employee31 emp3 = new Employee31(3, new String("Alice"), 55000);
         
         System.out.println("String equality comparisons:");
         
@@ -26,12 +26,12 @@ public class EmployeeString31_StringEqualityComparison {
     }
 }
 
-class Employee {
+class Employee31 {
     private int id;
     private String name;
     private double salary;
     
-    public Employee(int id, String name, double salary) {
+    public Employee31(int id, String name, double salary) {
         this.id = id;
         this.name = name;
         this.salary = salary;
@@ -43,6 +43,6 @@ class Employee {
     
     @Override
     public String toString() {
-        return "Employee{id=" + id + ", name='" + name + "', salary=" + salary + "}";
+        return "Employee31{id=" + id + ", name='" + name + "', salary=" + salary + "}";
     }
 }

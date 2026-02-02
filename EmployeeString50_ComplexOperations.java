@@ -1,15 +1,15 @@
 import java.util.*;
 import java.util.stream.Collectors;
 
-// Complex employee string operations combined
+// Complex Employee50 string operations combined
 public class EmployeeString50_ComplexOperations {
     public static void main(String[] args) {
-        List<Employee> employees = Arrays.asList(
-            new Employee(1, "Alice Johnson", "IT", "New York"),
-            new Employee(2, "Bob Smith", "HR", "Boston"),
-            new Employee(3, "Charlie Brown", "IT", "Chicago"),
-            new Employee(4, "David Wilson", "Finance", "Dallas"),
-            new Employee(5, "Eve Anderson", "IT", "Atlanta")
+        List<Employee50> employees = Arrays.asList(
+            new Employee50(1, "Alice Johnson", "IT", "New York"),
+            new Employee50(2, "Bob Smith", "HR", "Boston"),
+            new Employee50(3, "Charlie Brown", "IT", "Chicago"),
+            new Employee50(4, "David Wilson", "Finance", "Dallas"),
+            new Employee50(5, "Eve Anderson", "IT", "Atlanta")
         );
         
         System.out.println("All employees:");
@@ -18,11 +18,11 @@ public class EmployeeString50_ComplexOperations {
         // 1. Group by department and sort names
         System.out.println("\n--- Employees by Department (sorted) ---");
         employees.stream()
-                .collect(Collectors.groupingBy(Employee::getDepartment))
+                .collect(Collectors.groupingBy(Employee50::getDepartment))
                 .forEach((dept, empList) -> {
                     System.out.println("\n" + dept + ":");
                     empList.stream()
-                            .sorted(Comparator.comparing(Employee::getName))
+                            .sorted(Comparator.comparing(Employee50::getName))
                             .forEach(System.out::println);
                 });
         
@@ -50,13 +50,13 @@ public class EmployeeString50_ComplexOperations {
     }
 }
 
-class Employee {
+class Employee50 {
     private int id;
     private String name;
     private String department;
     private String city;
     
-    public Employee(int id, String name, String department, String city) {
+    public Employee50(int id, String name, String department, String city) {
         this.id = id;
         this.name = name;
         this.department = department;
@@ -70,7 +70,7 @@ class Employee {
     
     @Override
     public String toString() {
-        return "Employee{id=" + id + ", name='" + name + 
+        return "Employee50{id=" + id + ", name='" + name + 
                "', dept='" + department + "', city='" + city + "'}";
     }
 }

@@ -1,13 +1,13 @@
 import java.util.*;
 import java.util.stream.Collectors;
 
-// Convert all employee names to uppercase/lowercase
+// Convert all Employee07 names to uppercase/lowercase
 public class EmployeeString07_ChangeCaseNames {
     public static void main(String[] args) {
-        List<Employee> employees = Arrays.asList(
-            new Employee(1, "Alice", "IT"),
-            new Employee(2, "Bob", "HR"),
-            new Employee(3, "Charlie", "Finance")
+        List<Employee07> employees = Arrays.asList(
+            new Employee07(1, "Alice", "IT"),
+            new Employee07(2, "Bob", "HR"),
+            new Employee07(3, "Charlie", "Finance")
         );
         
         System.out.println("Original:");
@@ -27,12 +27,12 @@ public class EmployeeString07_ChangeCaseNames {
     }
 }
 
-class Employee {
+class Employee07 {
     private int id;
     private String name;
     private String department;
     
-    public Employee(int id, String name, String department) {
+    public Employee07(int id, String name, String department) {
         this.id = id;
         this.name = name;
         this.department = department;
@@ -44,6 +44,6 @@ class Employee {
     
     @Override
     public String toString() {
-        return "Employee{id=" + id + ", name='" + name + "', dept='" + department + "'}";
+        return "Employee07{id=" + id + ", name='" + name + "', dept='" + department + "'}";
     }
 }

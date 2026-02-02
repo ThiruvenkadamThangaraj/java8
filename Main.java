@@ -3,13 +3,13 @@ import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
-        List<Employee> employees = Arrays.asList(
-                new Employee(1, "Charlie"),
-                new Employee(3, "Alice"),
-                new Employee(2, "Bob"),
-                new Employee(1, "Alice"),
-                new Employee(1, "Charlie"), // duplicate
-                new Employee(2, "Bob") // duplicate
+        List<EmployeeMain> employees = Arrays.asList(
+                new EmployeeMain(1, "Charlie"),
+                new EmployeeMain(3, "Alice"),
+                new EmployeeMain(2, "Bob"),
+                new EmployeeMain(1, "Alice"),
+                new EmployeeMain(1, "Charlie"), // duplicate
+                new EmployeeMain(2, "Bob") // duplicate
         );
 
         System.out.println("Original list:");
@@ -17,7 +17,7 @@ public class Main {
 
         // Remove duplicates using distinct() - requires equals() and hashCode()
         System.out.println("\n--- Method 1: Using distinct() ---");
-        List<Employee> uniqueEmployees = employees.stream()
+        List<EmployeeMain> uniqueEmployees = employees.stream()
                 .distinct()
                 .collect(Collectors.toList());
         System.out.println("Unique employees:");
@@ -25,9 +25,9 @@ public class Main {
 
         // Remove duplicates based on id
         System.out.println("\n--- Method 2: Remove duplicates by ID ---");
-        List<Employee> uniqueById = employees.stream()
+        List<EmployeeMain> uniqueById = employees.stream()
                 .collect(Collectors.toMap(
-                        Employee::getId,
+                        EmployeeMain::getId,
                         e -> e,
                         (existing, replacement) -> existing))
                 .values()
@@ -37,9 +37,9 @@ public class Main {
 
         // Remove duplicates based on name
         System.out.println("\n--- Method 3: Remove duplicates by Name ---");
-        List<Employee> uniqueByName = employees.stream()
+        List<EmployeeMain> uniqueByName = employees.stream()
                 .collect(Collectors.toMap(
-                        Employee::getName,
+                        EmployeeMain::getName,
                         e -> e,
                         (existing, replacement) -> existing))
                 .values()
@@ -49,7 +49,7 @@ public class Main {
 
         // Remove duplicates based on both name and id
         System.out.println("\n--- Method 4: Remove duplicates by Name AND ID ---");
-        List<Employee> uniqueByNameAndId = employees.stream()
+        List<EmployeeMain> uniqueByNameAndId = employees.stream()
                 .collect(Collectors.toMap(
                         e -> e.getId() + "-" + e.getName(),
                         e -> e,
@@ -61,7 +61,7 @@ public class Main {
 
         // Using Set to remove duplicates
         System.out.println("\n--- Method 5: Using Set (requires equals/hashCode) ---");
-        Set<Employee> uniqueSet = new LinkedHashSet<>(employees);
+        Set<EmployeeMain> uniqueSet = new LinkedHashSet<>(employees);
         System.out.println("Unique employees in Set:");
         uniqueSet.forEach(System.out::println);
 
@@ -189,11 +189,11 @@ public class Main {
     }
 }
 
-class Employee {
+class EmployeeMain {
     private final int id;
     private final String name;
 
-    public Employee(int id, String name) {
+    public EmployeeMain(int id, String name) {
         this.id = id;
         this.name = name;
     }
@@ -208,15 +208,15 @@ class Employee {
 
     @Override
     public String toString() {
-        return "Employee{id=" + id + ", name='" + name + "'}";
+        return "EmployeeMain{id=" + id + ", name='" + name + "'}";
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Employee employee = (Employee) o;
-        return id == employee.id && Objects.equals(name, employee.name);
+        EmployeeMain EmployeeMain = (EmployeeMain) o;
+        return id == EmployeeMain.id && Objects.equals(name, EmployeeMain.name);
     }
 
     @Override

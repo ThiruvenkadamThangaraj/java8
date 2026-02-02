@@ -3,11 +3,11 @@ import java.util.*;
 // Search employees by name pattern (regex)
 public class EmployeeString19_RegexSearch {
     public static void main(String[] args) {
-        List<Employee> employees = Arrays.asList(
-            new Employee(1, "Alice123", "IT"),
-            new Employee(2, "Bob", "HR"),
-            new Employee(3, "Charlie456", "Finance"),
-            new Employee(4, "David", "IT")
+        List<Employee19> employees = Arrays.asList(
+            new Employee19(1, "Alice123", "IT"),
+            new Employee19(2, "Bob", "HR"),
+            new Employee19(3, "Charlie456", "Finance"),
+            new Employee19(4, "David", "IT")
         );
         
         System.out.println("All employees:");
@@ -25,12 +25,12 @@ public class EmployeeString19_RegexSearch {
     }
 }
 
-class Employee {
+class Employee19 {
     private int id;
     private String name;
     private String department;
     
-    public Employee(int id, String name, String department) {
+    public Employee19(int id, String name, String department) {
         this.id = id;
         this.name = name;
         this.department = department;
@@ -42,6 +42,6 @@ class Employee {
     
     @Override
     public String toString() {
-        return "Employee{id=" + id + ", name='" + name + "', dept='" + department + "'}";
+        return "Employee19{id=" + id + ", name='" + name + "', dept='" + department + "'}";
     }
 }

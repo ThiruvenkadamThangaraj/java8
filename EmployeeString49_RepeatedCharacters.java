@@ -5,11 +5,11 @@ import java.util.stream.Collectors;
 // Find employees with names having repeated characters
 public class EmployeeString49_RepeatedCharacters {
     public static void main(String[] args) {
-        List<Employee> employees = Arrays.asList(
-            new Employee(1, "Alice", "IT"),
-            new Employee(2, "Bob", "HR"),
-            new Employee(3, "Mississippi", "Finance"),
-            new Employee(4, "Sam", "IT")
+        List<Employee49> employees = Arrays.asList(
+            new Employee49(1, "Alice", "IT"),
+            new Employee49(2, "Bob", "HR"),
+            new Employee49(3, "Mississippi", "Finance"),
+            new Employee49(4, "Sam", "IT")
         );
         
         System.out.println("All employees:");
@@ -47,12 +47,12 @@ public class EmployeeString49_RepeatedCharacters {
     }
 }
 
-class Employee {
+class Employee49 {
     private int id;
     private String name;
     private String department;
     
-    public Employee(int id, String name, String department) {
+    public Employee49(int id, String name, String department) {
         this.id = id;
         this.name = name;
         this.department = department;
@@ -64,6 +64,6 @@ class Employee {
     
     @Override
     public String toString() {
-        return "Employee{id=" + id + ", name='" + name + "', dept='" + department + "'}";
+        return "Employee49{id=" + id + ", name='" + name + "', dept='" + department + "'}";
     }
 }

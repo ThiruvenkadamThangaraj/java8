@@ -1,13 +1,13 @@
 import java.util.*;
 
-// Case-insensitive comparison of employee names
+// Case-insensitive comparison of Employee15 names
 public class EmployeeString15_CaseInsensitiveComparison {
     public static void main(String[] args) {
-        List<Employee> employees = Arrays.asList(
-            new Employee(1, "Alice", "IT"),
-            new Employee(2, "ALICE", "HR"),
-            new Employee(3, "alice", "Finance"),
-            new Employee(4, "Bob", "IT")
+        List<Employee15> employees = Arrays.asList(
+            new Employee15(1, "Alice", "IT"),
+            new Employee15(2, "ALICE", "HR"),
+            new Employee15(3, "alice", "Finance"),
+            new Employee15(4, "Bob", "IT")
         );
         
         String searchName = "alice";
@@ -28,12 +28,12 @@ public class EmployeeString15_CaseInsensitiveComparison {
     }
 }
 
-class Employee {
+class Employee15 {
     private int id;
     private String name;
     private String department;
     
-    public Employee(int id, String name, String department) {
+    public Employee15(int id, String name, String department) {
         this.id = id;
         this.name = name;
         this.department = department;
@@ -45,6 +45,6 @@ class Employee {
     
     @Override
     public String toString() {
-        return "Employee{id=" + id + ", name='" + name + "', dept='" + department + "'}";
+        return "Employee15{id=" + id + ", name='" + name + "', dept='" + department + "'}";
     }
 }

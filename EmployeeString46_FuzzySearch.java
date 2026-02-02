@@ -3,11 +3,11 @@ import java.util.*;
 // Search employees with fuzzy matching
 public class EmployeeString46_FuzzySearch {
     public static void main(String[] args) {
-        List<Employee> employees = Arrays.asList(
-            new Employee(1, "Alice", "IT"),
-            new Employee(2, "Alicia", "HR"),
-            new Employee(3, "Bob", "Finance"),
-            new Employee(4, "Amanda", "IT")
+        List<Employee46> employees = Arrays.asList(
+            new Employee46(1, "Alice", "IT"),
+            new Employee46(2, "Alicia", "HR"),
+            new Employee46(3, "Bob", "Finance"),
+            new Employee46(4, "Amanda", "IT")
         );
         
         String searchTerm = "Ali";
@@ -44,12 +44,12 @@ public class EmployeeString46_FuzzySearch {
     }
 }
 
-class Employee {
+class Employee46 {
     private int id;
     private String name;
     private String department;
     
-    public Employee(int id, String name, String department) {
+    public Employee46(int id, String name, String department) {
         this.id = id;
         this.name = name;
         this.department = department;
@@ -61,6 +61,6 @@ class Employee {
     
     @Override
     public String toString() {
-        return "Employee{id=" + id + ", name='" + name + "', dept='" + department + "'}";
+        return "Employee46{id=" + id + ", name='" + name + "', dept='" + department + "'}";
     }
 }

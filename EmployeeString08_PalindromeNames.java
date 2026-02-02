@@ -3,12 +3,12 @@ import java.util.*;
 // Find employees with palindrome names
 public class EmployeeString08_PalindromeNames {
     public static void main(String[] args) {
-        List<Employee> employees = Arrays.asList(
-            new Employee(1, "Bob", "IT"),
-            new Employee(2, "Anna", "HR"),
-            new Employee(3, "Charlie", "Finance"),
-            new Employee(4, "Hannah", "IT"),
-            new Employee(5, "David", "HR")
+        List<Employee08> employees = Arrays.asList(
+            new Employee08(1, "Bob", "IT"),
+            new Employee08(2, "Anna", "HR"),
+            new Employee08(3, "Charlie", "Finance"),
+            new Employee08(4, "Hannah", "IT"),
+            new Employee08(5, "David", "HR")
         );
         
         System.out.println("All employees:");
@@ -26,12 +26,12 @@ public class EmployeeString08_PalindromeNames {
     }
 }
 
-class Employee {
+class Employee08 {
     private int id;
     private String name;
     private String department;
     
-    public Employee(int id, String name, String department) {
+    public Employee08(int id, String name, String department) {
         this.id = id;
         this.name = name;
         this.department = department;
@@ -43,6 +43,6 @@ class Employee {
     
     @Override
     public String toString() {
-        return "Employee{id=" + id + ", name='" + name + "', dept='" + department + "'}";
+        return "Employee08{id=" + id + ", name='" + name + "', dept='" + department + "'}";
     }
 }

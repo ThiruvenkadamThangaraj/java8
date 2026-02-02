@@ -3,10 +3,10 @@ import java.util.*;
 // Find employees with unique characters in name
 public class EmployeeString27_UniqueCharsInName {
     public static void main(String[] args) {
-        List<Employee> employees = Arrays.asList(
-            new Employee(1, "Alice", "IT"),
-            new Employee(2, "Bob", "HR"),
-            new Employee(3, "aabbcc", "Finance")
+        List<Employee27> employees = Arrays.asList(
+            new Employee27(1, "Alice", "IT"),
+            new Employee27(2, "Bob", "HR"),
+            new Employee27(3, "aabbcc", "Finance")
         );
         
         System.out.println("Unique character count in names:");
@@ -19,12 +19,12 @@ public class EmployeeString27_UniqueCharsInName {
     }
 }
 
-class Employee {
+class Employee27 {
     private int id;
     private String name;
     private String department;
     
-    public Employee(int id, String name, String department) {
+    public Employee27(int id, String name, String department) {
         this.id = id;
         this.name = name;
         this.department = department;
@@ -36,6 +36,6 @@ class Employee {
     
     @Override
     public String toString() {
-        return "Employee{id=" + id + ", name='" + name + "', dept='" + department + "'}";
+        return "Employee27{id=" + id + ", name='" + name + "', dept='" + department + "'}";
     }
 }

@@ -1,13 +1,13 @@
 import java.util.*;
 import java.util.stream.Collectors;
 
-// Create map of employee ID to name
+// Create map of Employee22 ID to name
 public class EmployeeString22_IdToNameMap {
     public static void main(String[] args) {
-        List<Employee> employees = Arrays.asList(
-            new Employee(1, "Alice", "IT"),
-            new Employee(2, "Bob", "HR"),
-            new Employee(3, "Charlie", "Finance")
+        List<Employee22> employees = Arrays.asList(
+            new Employee22(1, "Alice", "IT"),
+            new Employee22(2, "Bob", "HR"),
+            new Employee22(3, "Charlie", "Finance")
         );
         
         System.out.println("All employees:");
@@ -15,8 +15,8 @@ public class EmployeeString22_IdToNameMap {
         
         Map<Integer, String> idToName = employees.stream()
                 .collect(Collectors.toMap(
-                    Employee::getId,
-                    Employee::getName
+                    Employee22::getId,
+                    Employee22::getName
                 ));
         
         System.out.println("\nID to Name map:");
@@ -25,12 +25,12 @@ public class EmployeeString22_IdToNameMap {
     }
 }
 
-class Employee {
+class Employee22 {
     private int id;
     private String name;
     private String department;
     
-    public Employee(int id, String name, String department) {
+    public Employee22(int id, String name, String department) {
         this.id = id;
         this.name = name;
         this.department = department;
@@ -42,6 +42,6 @@ class Employee {
     
     @Override
     public String toString() {
-        return "Employee{id=" + id + ", name='" + name + "', dept='" + department + "'}";
+        return "Employee22{id=" + id + ", name='" + name + "', dept='" + department + "'}";
     }
 }

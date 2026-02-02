@@ -1,15 +1,15 @@
 import java.util.*;
 
-// Count vowels in employee names
+// Count vowels in Employee20 names
 public class EmployeeString20_CountVowelsInNames {
     public static void main(String[] args) {
-        List<Employee> employees = Arrays.asList(
-            new Employee(1, "Alice", "IT"),
-            new Employee(2, "Bob", "HR"),
-            new Employee(3, "Education", "Finance")
+        List<Employee20> employees = Arrays.asList(
+            new Employee20(1, "Alice", "IT"),
+            new Employee20(2, "Bob", "HR"),
+            new Employee20(3, "Education", "Finance")
         );
         
-        System.out.println("Vowel count in employee names:");
+        System.out.println("Vowel count in Employee20 names:");
         employees.forEach(emp -> {
             long vowelCount = emp.getName().toLowerCase().chars()
                     .filter(c -> "aeiou".indexOf(c) != -1)
@@ -19,12 +19,12 @@ public class EmployeeString20_CountVowelsInNames {
     }
 }
 
-class Employee {
+class Employee20 {
     private int id;
     private String name;
     private String department;
     
-    public Employee(int id, String name, String department) {
+    public Employee20(int id, String name, String department) {
         this.id = id;
         this.name = name;
         this.department = department;
@@ -36,6 +36,6 @@ class Employee {
     
     @Override
     public String toString() {
-        return "Employee{id=" + id + ", name='" + name + "', dept='" + department + "'}";
+        return "Employee20{id=" + id + ", name='" + name + "', dept='" + department + "'}";
     }
 }

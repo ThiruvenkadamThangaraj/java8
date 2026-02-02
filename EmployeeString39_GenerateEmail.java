@@ -1,12 +1,12 @@
 import java.util.*;
 
-// Generate email from employee name
+// Generate email from Employee39 name
 public class EmployeeString39_GenerateEmail {
     public static void main(String[] args) {
-        List<Employee> employees = Arrays.asList(
-            new Employee(1, "John Smith", "IT"),
-            new Employee(2, "Alice Johnson", "HR"),
-            new Employee(3, "Bob", "Finance")
+        List<Employee39> employees = Arrays.asList(
+            new Employee39(1, "John Smith", "IT"),
+            new Employee39(2, "Alice Johnson", "HR"),
+            new Employee39(3, "Bob", "Finance")
         );
         
         System.out.println("Generated emails:");
@@ -19,12 +19,12 @@ public class EmployeeString39_GenerateEmail {
     }
 }
 
-class Employee {
+class Employee39 {
     private int id;
     private String name;
     private String department;
     
-    public Employee(int id, String name, String department) {
+    public Employee39(int id, String name, String department) {
         this.id = id;
         this.name = name;
         this.department = department;
@@ -36,6 +36,6 @@ class Employee {
     
     @Override
     public String toString() {
-        return "Employee{id=" + id + ", name='" + name + "', dept='" + department + "'}";
+        return "Employee39{id=" + id + ", name='" + name + "', dept='" + department + "'}";
     }
 }

@@ -1,12 +1,12 @@
 import java.util.*;
 
-// Find common substring in employee names
+// Find common substring in Employee34 names
 public class EmployeeString34_CommonSubstring {
     public static void main(String[] args) {
-        List<Employee> employees = Arrays.asList(
-            new Employee(1, "Johnson", "IT"),
-            new Employee(2, "Johnston", "HR"),
-            new Employee(3, "Johnstone", "Finance")
+        List<Employee34> employees = Arrays.asList(
+            new Employee34(1, "Johnson", "IT"),
+            new Employee34(2, "Johnston", "HR"),
+            new Employee34(3, "Johnstone", "Finance")
         );
         
         System.out.println("All employees:");
@@ -15,7 +15,7 @@ public class EmployeeString34_CommonSubstring {
         String first = employees.get(0).getName();
         String commonPrefix = first;
         
-        for (Employee emp : employees) {
+        for (Employee34 emp : employees) {
             String name = emp.getName();
             int minLen = Math.min(commonPrefix.length(), name.length());
             int i = 0;
@@ -29,12 +29,12 @@ public class EmployeeString34_CommonSubstring {
     }
 }
 
-class Employee {
+class Employee34 {
     private int id;
     private String name;
     private String department;
     
-    public Employee(int id, String name, String department) {
+    public Employee34(int id, String name, String department) {
         this.id = id;
         this.name = name;
         this.department = department;
@@ -46,6 +46,6 @@ class Employee {
     
     @Override
     public String toString() {
-        return "Employee{id=" + id + ", name='" + name + "', dept='" + department + "'}";
+        return "Employee34{id=" + id + ", name='" + name + "', dept='" + department + "'}";
     }
 }

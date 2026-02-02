@@ -1,12 +1,12 @@
 import java.util.*;
 
-// Check if any employee name matches pattern
+// Check if any Employee24 name matches pattern
 public class EmployeeString24_AnyMatchNamePattern {
     public static void main(String[] args) {
-        List<Employee> employees = Arrays.asList(
-            new Employee(1, "Alice", "IT"),
-            new Employee(2, "Bob", "HR"),
-            new Employee(3, "Charlie", "Finance")
+        List<Employee24> employees = Arrays.asList(
+            new Employee24(1, "Alice", "IT"),
+            new Employee24(2, "Bob", "HR"),
+            new Employee24(3, "Charlie", "Finance")
         );
         
         System.out.println("All employees:");
@@ -26,12 +26,12 @@ public class EmployeeString24_AnyMatchNamePattern {
     }
 }
 
-class Employee {
+class Employee24 {
     private int id;
     private String name;
     private String department;
     
-    public Employee(int id, String name, String department) {
+    public Employee24(int id, String name, String department) {
         this.id = id;
         this.name = name;
         this.department = department;
@@ -43,6 +43,6 @@ class Employee {
     
     @Override
     public String toString() {
-        return "Employee{id=" + id + ", name='" + name + "', dept='" + department + "'}";
+        return "Employee24{id=" + id + ", name='" + name + "', dept='" + department + "'}";
     }
 }

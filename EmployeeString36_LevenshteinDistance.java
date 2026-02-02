@@ -1,11 +1,11 @@
 
 
-// Calculate Levenshtein distance between employee names
+// Calculate Levenshtein distance between Employee36 names
 public class EmployeeString36_LevenshteinDistance {
     public static void main(String[] args) {
-        Employee emp1 = new Employee(1, "Alice", 50000);
-        Employee emp2 = new Employee(2, "Alicia", 60000);
-        Employee emp3 = new Employee(3, "Bob", 55000);
+        Employee36 emp1 = new Employee36(1, "Alice", 50000);
+        Employee36 emp2 = new Employee36(2, "Alicia", 60000);
+        Employee36 emp3 = new Employee36(3, "Bob", 55000);
         
         System.out.println("Levenshtein distances between names:");
         
@@ -37,12 +37,12 @@ public class EmployeeString36_LevenshteinDistance {
     }
 }
 
-class Employee {
+class Employee36 {
     private int id;
     private String name;
     private double salary;
     
-    public Employee(int id, String name, double salary) {
+    public Employee36(int id, String name, double salary) {
         this.id = id;
         this.name = name;
         this.salary = salary;
@@ -54,6 +54,6 @@ class Employee {
     
     @Override
     public String toString() {
-        return "Employee{id=" + id + ", name='" + name + "', salary=" + salary + "}";
+        return "Employee36{id=" + id + ", name='" + name + "', salary=" + salary + "}";
     }
 }

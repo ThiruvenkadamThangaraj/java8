@@ -1,12 +1,12 @@
 import java.util.*;
 
-// Trim whitespace from employee names
+// Trim whitespace from Employee29 names
 public class EmployeeString29_TrimNames {
     public static void main(String[] args) {
-        List<Employee> employees = Arrays.asList(
-            new Employee(1, "  Alice  ", 50000),
-            new Employee(2, " Bob ", 60000),
-            new Employee(3, "Charlie", 55000)
+        List<Employee29> employees = Arrays.asList(
+            new Employee29(1, "  Alice  ", 50000),
+            new Employee29(2, " Bob ", 60000),
+            new Employee29(3, "Charlie", 55000)
         );
         
         System.out.println("Original names (with quotes to show spaces):");
@@ -20,12 +20,12 @@ public class EmployeeString29_TrimNames {
     }
 }
 
-class Employee {
+class Employee29 {
     private int id;
     private String name;
     private double salary;
     
-    public Employee(int id, String name, double salary) {
+    public Employee29(int id, String name, double salary) {
         this.id = id;
         this.name = name;
         this.salary = salary;
@@ -37,6 +37,6 @@ class Employee {
     
     @Override
     public String toString() {
-        return "Employee{id=" + id + ", name='" + name + "', salary=" + salary + "}";
+        return "Employee29{id=" + id + ", name='" + name + "', salary=" + salary + "}";
     }
 }

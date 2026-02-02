@@ -1,12 +1,12 @@
 import java.util.*;
 
-// Abbreviate employee names
+// Abbreviate Employee43 names
 public class EmployeeString43_AbbreviateNames {
     public static void main(String[] args) {
-        List<Employee> employees = Arrays.asList(
-            new Employee(1, "Christopher Alexander", 50000),
-            new Employee(2, "Bob", 60000),
-            new Employee(3, "Alexandria Marie Johnson", 55000)
+        List<Employee43> employees = Arrays.asList(
+            new Employee43(1, "Christopher Alexander", 50000),
+            new Employee43(2, "Bob", 60000),
+            new Employee43(3, "Alexandria Marie Johnson", 55000)
         );
         
         System.out.println("Abbreviated names:");
@@ -19,12 +19,12 @@ public class EmployeeString43_AbbreviateNames {
     }
 }
 
-class Employee {
+class Employee43 {
     private int id;
     private String name;
     private double salary;
     
-    public Employee(int id, String name, double salary) {
+    public Employee43(int id, String name, double salary) {
         this.id = id;
         this.name = name;
         this.salary = salary;
@@ -36,6 +36,6 @@ class Employee {
     
     @Override
     public String toString() {
-        return "Employee{id=" + id + ", name='" + name + "', salary=" + salary + "}";
+        return "Employee43{id=" + id + ", name='" + name + "', salary=" + salary + "}";
     }
 }

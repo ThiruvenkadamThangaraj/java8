@@ -3,9 +3,9 @@
 // Calculate name similarity percentage
 public class EmployeeString45_NameSimilarityPercentage {
     public static void main(String[] args) {
-        Employee emp1 = new Employee(1, "Alice", 50000);
-        Employee emp2 = new Employee(2, "Alicia", 60000);
-        Employee emp3 = new Employee(3, "Bob", 55000);
+        Employee45 emp1 = new Employee45(1, "Alice", 50000);
+        Employee45 emp2 = new Employee45(2, "Alicia", 60000);
+        Employee45 emp3 = new Employee45(3, "Bob", 55000);
         
         System.out.println("Name similarity percentages:");
         
@@ -45,12 +45,12 @@ public class EmployeeString45_NameSimilarityPercentage {
     }
 }
 
-class Employee {
+class Employee45 {
     private int id;
     private String name;
     private double salary;
     
-    public Employee(int id, String name, double salary) {
+    public Employee45(int id, String name, double salary) {
         this.id = id;
         this.name = name;
         this.salary = salary;
@@ -62,6 +62,6 @@ class Employee {
     
     @Override
     public String toString() {
-        return "Employee{id=" + id + ", name='" + name + "', salary=" + salary + "}";
+        return "Employee45{id=" + id + ", name='" + name + "', salary=" + salary + "}";
     }
 }

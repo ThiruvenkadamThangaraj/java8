@@ -1,12 +1,12 @@
 import java.util.*;
 
-// Format employee names (capitalize first letter)
+// Format Employee32 names (capitalize first letter)
 public class EmployeeString32_FormatNames {
     public static void main(String[] args) {
-        List<Employee> employees = Arrays.asList(
-            new Employee(1, "alice smith", 50000),
-            new Employee(2, "BOB JOHNSON", 60000),
-            new Employee(3, "cHaRlIe BrOwN", 55000)
+        List<Employee32> employees = Arrays.asList(
+            new Employee32(1, "alice smith", 50000),
+            new Employee32(2, "BOB JOHNSON", 60000),
+            new Employee32(3, "cHaRlIe BrOwN", 55000)
         );
         
         System.out.println("Original names:");
@@ -23,12 +23,12 @@ public class EmployeeString32_FormatNames {
     }
 }
 
-class Employee {
+class Employee32 {
     private int id;
     private String name;
     private double salary;
     
-    public Employee(int id, String name, double salary) {
+    public Employee32(int id, String name, double salary) {
         this.id = id;
         this.name = name;
         this.salary = salary;
@@ -40,6 +40,6 @@ class Employee {
     
     @Override
     public String toString() {
-        return "Employee{id=" + id + ", name='" + name + "', salary=" + salary + "}";
+        return "Employee32{id=" + id + ", name='" + name + "', salary=" + salary + "}";
     }
 }

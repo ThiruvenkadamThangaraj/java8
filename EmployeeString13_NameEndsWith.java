@@ -3,12 +3,12 @@ import java.util.*;
 // Filter employees by name ending with specific letter
 public class EmployeeString13_NameEndsWith {
     public static void main(String[] args) {
-        List<Employee> employees = Arrays.asList(
-            new Employee(1, "Alice", "IT"),
-            new Employee(2, "Bob", "HR"),
-            new Employee(3, "Charlie", "Finance"),
-            new Employee(4, "Amanda", "IT"),
-            new Employee(5, "David", "HR")
+        List<Employee13> employees = Arrays.asList(
+            new Employee13(1, "Alice", "IT"),
+            new Employee13(2, "Bob", "HR"),
+            new Employee13(3, "Charlie", "Finance"),
+            new Employee13(4, "Amanda", "IT"),
+            new Employee13(5, "David", "HR")
         );
         
         System.out.println("All employees:");
@@ -26,12 +26,12 @@ public class EmployeeString13_NameEndsWith {
     }
 }
 
-class Employee {
+class Employee13 {
     private int id;
     private String name;
     private String department;
     
-    public Employee(int id, String name, String department) {
+    public Employee13(int id, String name, String department) {
         this.id = id;
         this.name = name;
         this.department = department;
@@ -43,6 +43,6 @@ class Employee {
     
     @Override
     public String toString() {
-        return "Employee{id=" + id + ", name='" + name + "', dept='" + department + "'}";
+        return "Employee13{id=" + id + ", name='" + name + "', dept='" + department + "'}";
     }
 }
