@@ -3,9 +3,10 @@ public class String12_StringContainsVowels {
     public static void main(String[] args) {
         String[] words = {"Hello", "Sky", "Rhythm", "Fly", "Programming"};
         
-        for (String word : words) {
+        for (int i = 0; i < words.length; i++) {
+            String word = words[i];
             boolean hasVowels = word.toLowerCase().chars()
-                    .anyMatch(c -> "aeiou".indexOf(c) != -1);
+                .anyMatch(c -> "aeiou".indexOf(c) != -1);
             
             System.out.println(word + " contains vowels? " + hasVowels);
         }

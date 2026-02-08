@@ -14,7 +14,8 @@ public class Threading21_ParallelProcessing {
         long start = System.currentTimeMillis();
         
         List<CompletableFuture<Integer>> futures = new ArrayList<>();
-        for (Integer num : numbers) {
+        for (int i = 0; i < numbers.size(); i++) {
+            Integer num = numbers.get(i);
             CompletableFuture<Integer> future = CompletableFuture.supplyAsync(() -> {
                 System.out.println("Processing " + num + " on " + Thread.currentThread().getName());
                 try { Thread.sleep(1000); } catch (InterruptedException e) { e.printStackTrace(); }

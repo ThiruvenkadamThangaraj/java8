@@ -15,7 +15,9 @@ public class String42_MinimumWindowSubstring {
         if (s.length() == 0 || t.length() == 0) return "";
         
         Map<Character, Integer> dictT = new HashMap<>();
-        for (char c : t.toCharArray()) {
+        char[] tChars = t.toCharArray();
+        for (int i = 0; i < tChars.length; i++) {
+            char c = tChars[i];
             dictT.put(c, dictT.getOrDefault(c, 0) + 1);
         }
         

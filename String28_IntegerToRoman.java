@@ -3,7 +3,8 @@ public class String28_IntegerToRoman {
     public static void main(String[] args) {
         int[] numbers = {3, 4, 9, 58, 1994, 3999};
         
-        for (int num : numbers) {
+        for (int i = 0; i < numbers.length; i++) {
+            int num = numbers[i];
             System.out.println(num + " = " + intToRoman(num));
         }
     }

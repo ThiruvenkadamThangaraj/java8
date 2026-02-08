@@ -24,7 +24,8 @@ public class String33_MultiplyStrings {
         }
         
         StringBuilder sb = new StringBuilder();
-        for (int num : result) {
+        for (int i = 0; i < result.length; i++) {
+            int num = result[i];
             if (!(sb.length() == 0 && num == 0)) {
                 sb.append(num);
             }

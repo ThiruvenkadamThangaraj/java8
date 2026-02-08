@@ -15,7 +15,8 @@ public class EmployeeString34_CommonSubstring {
         String first = employees.get(0).getName();
         String commonPrefix = first;
         
-        for (Employee34 emp : employees) {
+        for (int idx = 0; idx < employees.size(); idx++) {
+            Employee34 emp = employees.get(idx);
             String name = emp.getName();
             int minLen = Math.min(commonPrefix.length(), name.length());
             int i = 0;

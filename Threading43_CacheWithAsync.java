@@ -1,12 +1,13 @@
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.function.Function;
 
 // Async caching pattern
 public class Threading43_CacheWithAsync {
     static class AsyncCache<K, V> {
         private ConcurrentHashMap<K, CompletableFuture<V>> cache = new ConcurrentHashMap<>();
         
-        CompletableFuture<V> get(K key, java.util.function.Function<K, CompletableFuture<V>> loader) {
+        CompletableFuture<V> get(K key, Function<K, CompletableFuture<V>> loader) {
             return cache.computeIfAbsent(key, k -> {
                 System.out.println("Cache miss for " + k + ", loading...");
                 return loader.apply(k);

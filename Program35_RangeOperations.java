@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.stream.IntStream;
 
 // IntStream range operations
@@ -17,6 +18,6 @@ public class Program35_RangeOperations {
         
         // Generate array
         int[] array = IntStream.range(0, 5).toArray();
-        System.out.println("\nGenerated array: " + java.util.Arrays.toString(array));
+        System.out.println("\nGenerated array: " + Arrays.toString(array));
     }
 }

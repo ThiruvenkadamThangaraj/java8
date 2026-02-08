@@ -5,7 +5,8 @@ public class String25_ValidParentheses {
     public static void main(String[] args) {
         String[] testCases = {"()", "()[]{}", "(]", "([)]", "{[]}"};
         
-        for (String test : testCases) {
+        for (int i = 0; i < testCases.length; i++) {
+            String test = testCases[i];
             System.out.println(test + " is valid? " + isValid(test));
         }
     }
@@ -13,7 +14,9 @@ public class String25_ValidParentheses {
     static boolean isValid(String s) {
         Stack<Character> stack = new Stack<>();
         
-        for (char c : s.toCharArray()) {
+        char[] chars = s.toCharArray();
+        for (int i = 0; i < chars.length; i++) {
+            char c = chars[i];
             if (c == '(' || c == '[' || c == '{') {
                 stack.push(c);
             } else {

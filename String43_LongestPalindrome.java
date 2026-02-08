@@ -3,7 +3,8 @@ public class String43_LongestPalindrome {
     public static void main(String[] args) {
         String[] testCases = {"babad", "cbbd", "a", "ac"};
         
-        for (String test : testCases) {
+        for (int i = 0; i < testCases.length; i++) {
+            String test = testCases[i];
             System.out.println("String: " + test);
             System.out.println("Longest palindrome: " + longestPalindrome(test));
             System.out.println();

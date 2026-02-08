@@ -3,7 +3,8 @@ public class LongestPrefix {
         String[] words = new String[]{"flowing", "flow", "flowwer"};
         String prefix = words[0];
         
-        for (String word : words) {
+        for (int i = 0; i < words.length; i++) {
+            String word = words[i];
             while (word.indexOf(prefix) != 0) {
                 prefix = prefix.substring(0, prefix.length() - 1);
             }

@@ -12,7 +12,8 @@ public class ExtractHero {
 
         String[] events = payload.split(NEW_LINE_PATTERN);
 
-        for (String event : events) {
+        for (int i = 0; i < events.length; i++) {
+            String event = events[i];
             String[] tokens = event.split(SPACE_REGEX);
             String heroName = tokens[1];
             if (heroName.startsWith(KYC_DATA_HERO)) {

@@ -5,7 +5,8 @@ public class String26_LongestSubstringNoRepeat {
     public static void main(String[] args) {
         String[] testCases = {"abcabcbb", "bbbbb", "pwwkew", "dvdf"};
         
-        for (String test : testCases) {
+        for (int i = 0; i < testCases.length; i++) {
+            String test = testCases[i];
             System.out.println("String: " + test);
             String longest = findLongest(test);
             System.out.println("Longest substring: " + longest + " (length: " + longest.length() + ")\n");

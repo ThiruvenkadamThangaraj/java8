@@ -9,7 +9,8 @@ public class String36_ValidateIPAddress {
             "192.168.01.1"
         };
         
-        for (String ip : testCases) {
+        for (int i = 0; i < testCases.length; i++) {
+            String ip = testCases[i];
             System.out.println(ip + " is valid? " + isValidIPv4(ip));
         }
     }
@@ -18,7 +19,8 @@ public class String36_ValidateIPAddress {
         String[] parts = ip.split("\\.");
         if (parts.length != 4) return false;
         
-        for (String part : parts) {
+        for (int i = 0; i < parts.length; i++) {
+            String part = parts[i];
             if (part.isEmpty() || part.length() > 3) return false;
             if (part.length() > 1 && part.charAt(0) == '0') return false;
             

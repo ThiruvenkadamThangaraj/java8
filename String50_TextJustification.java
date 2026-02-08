@@ -11,7 +11,8 @@ public class String50_TextJustification {
         System.out.println("\nJustified text:");
         
         List<String> result = fullJustify(words, maxWidth);
-        for (String line : result) {
+        for (int i = 0; i < result.size(); i++) {
+            String line = result.get(i);
             System.out.println("'" + line + "'");
         }
     }

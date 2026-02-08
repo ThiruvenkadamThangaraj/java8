@@ -7,7 +7,8 @@ public class String31_LengthOfLastWord {
             "luffy is still joyboy"
         };
         
-        for (String test : testCases) {
+        for (int i = 0; i < testCases.length; i++) {
+            String test = testCases[i];
             System.out.println("String: '" + test + "'");
             System.out.println("Last word length: " + lengthOfLastWord(test));
             System.out.println();

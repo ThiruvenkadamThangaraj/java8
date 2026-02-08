@@ -23,7 +23,9 @@ public class String27_ZigZagConversion {
         int currentRow = 0;
         boolean goingDown = false;
         
-        for (char c : s.toCharArray()) {
+        char[] chars = s.toCharArray();
+        for (int i = 0; i < chars.length; i++) {
+            char c = chars[i];
             rows[currentRow].append(c);
             if (currentRow == 0 || currentRow == numRows - 1) {
                 goingDown = !goingDown;
@@ -32,8 +34,8 @@ public class String27_ZigZagConversion {
         }
         
         StringBuilder result = new StringBuilder();
-        for (StringBuilder row : rows) {
-            result.append(row);
+        for (int i = 0; i < rows.length; i++) {
+            result.append(rows[i]);
         }
         
         return result.toString();

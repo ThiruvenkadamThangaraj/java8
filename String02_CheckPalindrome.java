@@ -3,7 +3,8 @@ public class String02_CheckPalindrome {
     public static void main(String[] args) {
         String[] words = {"radar", "hello", "level", "world", "madam"};
         
-        for (String word : words) {
+        for (int i = 0; i < words.length; i++) {
+            String word = words[i];
             boolean isPalindrome = word.equals(new StringBuilder(word).reverse().toString());
             System.out.println(word + " is palindrome? " + isPalindrome);
         }

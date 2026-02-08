@@ -5,7 +5,8 @@ public class String24_RomanToInteger {
     public static void main(String[] args) {
         String[] romans = {"III", "IV", "IX", "LVIII", "MCMXCIV"};
         
-        for (String roman : romans) {
+        for (int i = 0; i < romans.length; i++) {
+            String roman = romans[i];
             System.out.println(roman + " = " + romanToInt(roman));
         }
     }

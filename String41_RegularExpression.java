@@ -8,7 +8,8 @@ public class String41_RegularExpression {
             {"mississippi", "mis*is*p*."}
         };
         
-        for (String[] test : testCases) {
+        for (int i = 0; i < testCases.length; i++) {
+            String[] test = testCases[i];
             System.out.println("Text: " + test[0] + ", Pattern: " + test[1]);
             System.out.println("Matches? " + isMatch(test[0], test[1]));
             System.out.println();

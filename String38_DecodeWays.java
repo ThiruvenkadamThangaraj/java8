@@ -3,7 +3,8 @@ public class String38_DecodeWays {
     public static void main(String[] args) {
         String[] testCases = {"12", "226", "06", "11106"};
         
-        for (String s : testCases) {
+        for (int i = 0; i < testCases.length; i++) {
+            String s = testCases[i];
             System.out.println("String: " + s);
             System.out.println("Number of ways to decode: " + numDecodings(s));
             System.out.println();

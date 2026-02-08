@@ -10,7 +10,8 @@ public class String34_SimplifyPath {
             "/a/./b/../../c/"
         };
         
-        for (String path : paths) {
+        for (int i = 0; i < paths.length; i++) {
+            String path = paths[i];
             System.out.println("Original: " + path);
             System.out.println("Simplified: " + simplifyPath(path));
             System.out.println();
@@ -21,7 +22,8 @@ public class String34_SimplifyPath {
         Stack<String> stack = new Stack<>();
         String[] parts = path.split("/");
         
-        for (String part : parts) {
+        for (int i = 0; i < parts.length; i++) {
+            String part = parts[i];
             if (part.isEmpty() || part.equals(".")) {
                 continue;
             } else if (part.equals("..")) {
